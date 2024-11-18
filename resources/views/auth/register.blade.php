@@ -20,6 +20,15 @@
             </div>
 
             <div class="mt-4">
+                <x-label for="role" value="{{ __('Role') }}" />
+                <select id="role" name="role" id="" class="block mt-1 w-full" required autocomplete="role">
+                    <option value="">Daftar Sebagai </option>
+                    <option value="seller">Sebagai Penjual Qurban</option>
+                    <option value="user">Sebagai Pendaftar Qurban</option>
+                </select>
+            </div>
+
+            <div class="mt-4">
                 <x-label for="password" value="{{ __('Password') }}" />
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             </div>
@@ -48,7 +57,7 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                    {{ __('Already registered?') }}
+                    {{ __('Sudah Punya Akun? Login') }}
                 </a>
 
                 <x-button class="ms-4">
